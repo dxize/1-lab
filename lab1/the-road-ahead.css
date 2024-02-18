@@ -1,0 +1,330 @@
+body {
+    width: 1440px;
+    height: 2689px;
+    top: -1344px;
+    left: -720px;
+    background: #FFFFFF;
+    margin: 0 auto;
+}
+
+
+#Frame1 {
+    width: 1440px;
+    height: 89px;
+    top: 2600px;
+    position: relative;
+}
+
+#BigRectangleDown {
+    width: 1440px;
+    height: 89px;
+    position: absolute;
+}
+
+#SmallRectangleDown {
+    width: 960px;
+    height: 34px;
+    top: 28px;
+    left: 240px;
+    padding: 0px, 0.03px, 2px, 10px;
+    position: absolute;
+}
+
+#EscapeDown {
+    width: 92px;
+    height: 26px;
+    top: 3px;
+    left: 10px;
+    font-family: Lora;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 11;
+}
+
+#LinksDown {
+    width: 639.98px;
+    height: 32px;
+    left: 319.98px;
+    padding: 3px, 9.97px, 3px, 358.02px;
+    position: absolute;
+}
+
+#ContactDown {
+    width: 57px;
+    height: 26px;
+    top: 3px;
+    left: 573.02px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #FFFFFF99;
+    position: absolute;
+    z-index: 11;
+}
+
+#CategoriesDown {
+    width: 76px;
+    height: 26px;
+    top: 3px;
+    left: 415.02px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #FFFFFF99;
+    position: absolute;
+    z-index: 11;
+}
+
+#AboutDown {
+    width: 42px;
+    height: 26px;
+    top: 3px;
+    left: 511.02px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #FFFFFF99;
+    position: absolute;
+    z-index: 11;
+}
+
+#HomeDown {
+    width: 37px;
+    height: 26px;
+    top: 3px;
+    left: 358.02px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: right;
+    color: #FFFFFF99;
+    position: absolute;
+    z-index: 11;
+}
+
+#-RectangleDown {
+    width: 1440px;
+    height: 89px;
+    background-color: #232F3899;
+    position: absolute;
+    z-index: 10;
+}
+
+#Picture2 {
+    width: 1440px;
+    height: 89px;
+    background-color: #4D565D;
+    position: absolute;
+    z-index: 9;
+}
+
+
+#Frame2 {
+    width: 1440px;
+    height: 2600px;
+    position: relative;
+}
+
+#PolarLights {
+    top: 360px;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+}
+
+#PL {
+    width: 1440px;
+    height: 534px;
+    position: absolute;
+}
+
+#BigRectangleUp {
+    width: 1440px;
+    height: 74px;
+    position: absolute;
+}
+
+#SmallRectangleUp {
+    width: 940px;
+    height: 40px;
+    top: 17px;
+    left: 250px;
+    position: absolute;
+}
+
+#EscapeUp {
+    width: 92px;
+    height: 26px;
+    top: 3px;
+    font-family: Lora;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2E2E2E;
+    position: absolute;
+}
+
+#LinksUp {
+    width: 376.61px;
+    height: 40px;
+    left: 563.39px;
+    position: absolute;
+}
+
+#HomeUp {
+    width: 39px;
+    height: 20px;
+    top: 10px;
+    left: 19.61px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: left;
+    color: #2E2E2E;
+    position: absolute;
+}
+
+#RectangleinCategories {
+    width: 118px;
+    height: 40px;
+    left: 79.61px;
+    position: absolute;
+}
+
+#CategoriesUp {
+    width: 78px;
+    height: 20px;
+    top: 10px;
+    left: 20px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: left;
+    color: #2E2E2E;
+    position: absolute;
+}
+
+#RectangleinAbout {
+    width: 81px;
+    height: 40px;
+    left: 197.61px;
+    position: absolute;
+}
+
+#AboutUp {
+    width: 41px;
+    height: 20px;
+    top: 10px;
+    left: 20px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: left;
+    color: #2E2E2E;
+    position: absolute;
+}
+
+#RectangleinContact {
+    width: 98px;
+    height: 40px;
+    left: 278.61px;
+    position: absolute;
+}
+
+#ContactUp {
+    width: 58px;
+    height: 20px;
+    top: 10px;
+    left: 20px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.6000000238418579px;
+    text-align: left;
+    color: #2E2E2E;
+    position: absolute;
+}
+
+#BoxText {
+    width: 1440px;
+    height: 1706px;
+    top: 894px;
+    background: #F7F7F7;
+    position: absolute;
+}
+
+#PP {
+    width: 960px;
+    margin-top: 140px;
+    margin-left: 240px;
+    font-family: Oxygen;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    color: #101315;
+}
+
+#head {
+    width: 940px;
+    height: 159px;
+    top: 163px;
+    left: 250px;
+    padding: 0px, 218px, 75px, 218px;
+    position: absolute;
+}
+
+#h1 {
+    width: 498px;
+    height: 51px;
+    top: -7px;
+    left: 221px;
+    font-family: Lora;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;
+    position: absolute;
+}
+
+#h2 {
+    width: 504px;
+    height: 20px;
+    top: 64px;
+    left: 218px;
+    font-family: Oxygen;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #2E2E2EA1;
+    position: absolute;
+}
