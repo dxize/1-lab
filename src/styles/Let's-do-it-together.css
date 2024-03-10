@@ -1,0 +1,690 @@
+body {
+    max-width: 100%;
+    height: 1909px;
+    background-color: #FFFFFF;
+    font-family: 'Oxygen', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-top a {
+    color: #FFFFFF;
+}
+
+.small-rectangle-mid-navigation a {
+    color: #768088;
+}
+
+#nav-bottom a {
+    color: #FFFFFF99;
+}
+
+.rectangle-img-top {
+    width: 100%;
+    height: 500px;
+    background-image: url(../../src/images/desert.jpg);
+    background-size: cover;
+}
+
+.big-rectangle-nav {
+    width: 100%;
+    height: 74px;
+}
+
+.small-rectangle-nav {
+    width: 65%;
+    height: 40px;
+    padding-top: 17px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.escape-nav {
+    height: 26px;
+}
+
+.navigation-bar {
+    width: 40%;
+    height: 40px;
+}
+
+.navigation-bar ul {
+    height: 40px;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigation-bar ul li {
+    list-style: none;
+    max-width: calc(25% - 20px);
+}
+
+.navigation-bar__home {
+    width: 10%;
+    height: 20px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.navigation-bar__categories {
+    width: 20%;
+    height: 20px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.navigation-bar__about {
+    width: 11%;
+    height: 20px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.navigation-bar__contact {
+    width: 15%;
+    height: 20px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.rectangle-head {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+    margin-bottom: 159px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: Lora;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.under-title {
+    font-family: Oxygen;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #FFFFFFA1;
+    margin-top: 20px;
+    margin-bottom: 31px;
+}
+
+.mid-button-top {
+    height: 44px;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #DD783F;
+}
+
+.mid-button-top__text {
+    font-family: Oxygen;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    padding-top: 12px;
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+.small-rectangle-mid-navigation ul {
+    width: 67%;
+    height: 46px;
+    margin-top: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 9px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.small-rectangle-mid-navigation ul li {
+    width: 15%;
+    font-family: Lora;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #768088;
+}
+
+.block-main {
+    width: 100%;
+    height: 1255px;
+    padding-top: 60px;
+    background-color: #F7F7F7;
+}
+
+.block-featured-posts {
+    width: 65%;
+    margin: 0 auto 0 auto;
+}
+
+.rectangle-title-featured-posts {
+    width: 65%;
+    height: 44px;
+    margin: 0 auto;
+}
+
+.title-featured-posts {
+    width: 37%;
+    height: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Oxygen;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;
+}
+
+.underlining-featured-posts {
+    width: 20%;
+    height: 1px;
+    margin: 16px auto 16px auto;
+    background-color: #DEDEDE;
+}
+
+.block-featured-post__content {
+    width: 102%;
+    max-height: 294px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 7px 0 7px 0;
+    display: flex;
+}
+
+.article-the-road-ahead {
+    width: 48%;
+    height: 280px;
+    border-radius: 3px;
+    background-image: url(../../src/images/Polar-lights.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 2%;
+    margin-left: auto;
+
+}
+
+.article-the-road-ahead__title {
+    width: 44%;
+    height: 30px;
+    padding-top: 157px;
+    margin-left: 20px;
+    font-family: Lora;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.article-the-road-ahead__under-title {
+    width: 67%;
+    height: 25px;
+    margin-top: 6px;
+    margin-left: 20px;
+    font-family: Oxygen;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFB2;
+}
+
+.article-the-road-ahead__footer-rectangle {
+    width: 91%;
+    height: 35px;
+    margin: 12px auto 15px 20px;
+    display: flex;
+}
+
+
+.face-the-road-ahead {
+    height: 74%;
+    margin-top: 5px;
+    margin-bottom: 4px;
+    border-radius: 60px;
+}
+
+.name-the-road-ahead {
+    width: 70%;
+    height: 35px;
+    margin-left: 10px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFB2;
+}
+
+.date-the-road-ahead {
+    width: 30%;
+    height: 35px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FFFFFFB2;
+
+}
+
+.article-from-top-down {
+    width: 48%;
+    height: 280px;
+    border-radius: 3px;
+    background-image: url(../../src/images/From-Top-Down.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: auto;
+}
+
+.article-from-top-down__rectangle-button-adventure {
+    width: 19%;
+    height: 26px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 2px;
+    background-color: #DD783F;
+
+}
+
+.button-adventure {
+    width: 79%;
+    height: 13px;
+    padding-top: 6px;
+    margin-left: auto;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 13px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    margin-right: auto;
+    text-align: center
+}
+
+.article-from-top-down__title {
+    width: 45%;
+    height: 30px;
+    margin-top: 111px;
+    margin-left: 20px;
+    font-family: Lora;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.article-from-top-down__under-title {
+    width: 75%;
+    height: 25px;
+    margin: 6px 96px 12px 20px;
+    font-family: Oxygen;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFB2;
+}
+
+.article-from-top-down__footer-rectangle {
+    width: 91%;
+    height: 35px;
+    margin: 12px auto 15px 20px;
+    display: flex;
+}
+
+.face-from-top-down {
+    height: 74%;
+    margin-top: 5px;
+    border-radius: 60px;
+}
+
+.name-from-top-down {
+    width: 70%;
+    height: 35px;
+    margin-left: 10px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFFB2;
+}
+
+.date-from-top-down {
+    width: 30%;
+    height: 35px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FFFFFFB2;
+}
+
+.block-most-recent {
+    width: 65%;
+    height: 752px;
+    margin: 0 auto 0 auto;
+    padding-top: 60px
+}
+
+.rectangle-title-most-recent {
+    width: 100%;
+    height: 44px;
+}
+
+.title-most-recent {
+    height: 27px;
+    margin: 0 auto;
+    font-family: Oxygen;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;
+}
+
+.underlining-most-recent {
+    width: 20%;
+    height: 1px;
+    margin: 16px auto;
+    background-color: #DEDEDE;
+}
+
+.block-most-recent__content {
+    width: 102%;
+    height: 632px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articles-in-most-recent {
+    width: 31%;
+    height: 291px;
+    margin: 6px auto 0 auto;
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 0px #00000017;
+    background: white;
+}
+
+.articles-in-most-recent__picture-Still-Standing-Tall {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../src/images/balloons.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.articles-in-most-recent__picture-Sunny-Side-Up {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../src/images/Sunny-Side-Up.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.articles-in-most-recent__picture-Water-Falls {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../src/images/Water-Falls.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.articles-in-most-recent__picture-Through-the-Mist {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../src/images/Through-the-Mist.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.articles-in-most-recent__picture-Awaken-Early {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../src/images/Awaken-Early.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.articles-in-most-recent__picture-Try-it-Always {
+    width: 100%;
+    height: 150px;
+    background-image: url(../../src/images/Try-it-Always.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.articles-in-most-recent__title {
+    width: 45%;
+    height: 21px;
+    margin-top: 14px;
+    margin-left: 13px;
+    font-family: Lora;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #101315;
+}
+
+.articles-in-most-recent__under-title-Still-Standing-Tall {
+    width: 86%;
+    height: 19px;
+    margin-top: 6px;
+    margin-left: 13px;
+    font-family: Oxygen;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7A7A7A;
+}
+
+.articles-in-most-recent__under-title-Sunny-Side-Up {
+    width: 83%;
+    height: 19px;
+    margin-top: 6px;
+    margin-left: 13px;
+    font-family: Oxygen;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7A7A7A;
+}
+
+.articles-in-most-recent__under-title-Water-Falls {
+    width: 91%;
+    height: 19px;
+    margin-top: 6px;
+    margin-left: 13px;
+    font-family: Oxygen;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7A7A7A;
+}
+
+.articles-in-most-recent__under-title-Through-the-Mist {
+    width: 85%;
+    height: 19px;
+    margin-top: 6px;
+    margin-left: 13px;
+    font-family: Oxygen;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7A7A7A;
+}
+
+.articles-in-most-recent__under-title-Awaken-Early {
+    width: 69%;
+    height: 19px;
+    margin-top: 6px;
+    margin-left: 13px;
+    font-family: Oxygen;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7A7A7A;
+}
+
+.articles-in-most-recent__under-title-Try-it-Always {
+    width: 85%;
+    height: 19px;
+    margin-top: 6px;
+    margin-left: 13px;
+    font-family: Oxygen;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7A7A7A;
+}
+
+.underlining-articles-in-most-recent {
+    width: 100%;
+    height: 1px;
+    margin-top: 33px;
+    background: #EFEFEF;
+}
+
+.articles-in-most-recent__footer-rectangle {
+    width: 100%;
+    height: 48px;
+    display: flex;
+}
+
+.articles-in-most-recent__face {
+    height: 54%;
+    margin-top: 12px;
+    margin-left: 13px;
+    border-radius: 60px;
+
+}
+
+.articles-in-most-recent__name {
+    width: 26%;
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 10px;
+    font-family: Oxygen;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #999999;
+}
+
+.articles-in-most-recent__date {
+    width: 20%;
+    height: 35px;
+    margin: 7px 0 0 33%;
+    padding-right: 13px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #999999;
+    flex-grow: 1
+}
+
+/*///////////////////////////////////////////////////*/
+.big-rectangle-nav-bottom {
+    width: 100%;
+    height: 89px;
+    background-image: url(../../src/images/IMAGE.png);
+    background-size: cover;
+}
+
+.footer-picture {
+    width: 100%;
+    height: 89px;
+    background-color: #232F3899;
+}
+
+.small-rectangle-nav-bottom {
+    width: 65%;
+    height: 40px;
+    padding-top: 27px;
+    margin: 0 auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
