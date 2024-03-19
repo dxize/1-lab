@@ -1,3 +1,16 @@
+<?php
+$posts = [
+ [
+   'title' => 'The Road Ahead',
+   'subtitle' => 'The road ahead might be paved - it might not be.',
+   'img_modifier' => '',
+   'author' => 'Mat Vogels',
+   // другие свойства этого поста
+ ],
+];
+?>
+
+
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -5,7 +18,7 @@
 <head>
     <title>Let's do it together.</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../src/styles/Let's-do-it-together.css">
+    <link rel="stylesheet" href="../src/styles/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap">
 </head>
 
@@ -64,16 +77,13 @@
                 </div>
                 <div class="underlining-featured-posts"></div>
                 <div class="block-featured-post__content">
-                    <div class="article-the-road-ahead">
-                        <div class="article-the-road-ahead__title">The Road Ahead</div>
-                        <div class="article-the-road-ahead__under-title">The road ahead might be paved - it might not
-                            be.</div>
-                        <div class="article-the-road-ahead__footer-rectangle">
-                            <img src="../src/images/Mat-Vogels.png" alt="face-Mat-Vogels" class="face-the-road-ahead">
-                            <div class="name-the-road-ahead">Mat Vogels</div>
-                            <div class="date-the-road-ahead">September 25, 2015</div>
-                        </div>
-                    </div>
+                        <!-- Блок с постами -->
+                    <?php 
+                // Подключение файла post_preview.php для каждого поста
+                    foreach ($posts as $post) {
+                        include 'post_preview.php';
+                    }
+                    ?>
                     <div class="article-from-top-down">
                         <div class="article-from-top-down__rectangle-button-adventure">
                             <div class="button-adventure">ADVENTURE</div>
