@@ -1,5 +1,5 @@
 <div class="article-the-road-ahead">
-    <div class="article-the-road-ahead__title"><?= $posts['title']?></div>
+    <div class="article-the-road-ahead__title"><?= $post['title']?></div>
     <div class="article-the-road-ahead__under-title"><?= $post['subtitle']?></div>
     <div class="article-the-road-ahead__footer-rectangle">
         <img src="../src/images/Mat-Vogels.png" alt="face-Mat-Vogels" class="face-the-road-ahead">
