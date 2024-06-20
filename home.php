@@ -1,13 +1,51 @@
 <?php
-$posts = [
- [
-   'title' => 'The Road Ahead',
-   'subtitle' => 'The road ahead might be paved - it might not be.',
-   'img_modifier' => '',
-   'author' => 'Mat Vogels',
-   // другие свойства этого поста
- ],
-];
+
+const HOST = 'localhost';
+const USERNAME = 'root';
+const PASSWORD = '';
+const DATABASE = 'blog';
+
+function createDBConnection(): mysqli
+{
+    $conn = new mysqli(HOST, USERNAME, PASSWORD, DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    return $conn;
+}
+
+function closeDBConnection(mysqli $conn): void
+{
+    $conn->close();
+}
+
+function displayPostPreviews1(mysqli $conn): void
+{
+    $sql = "SELECT * FROM post WHERE featured = 1";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            include 'post_preview.php'; // Включаем файл, который отображает предварительный просмотр поста
+        }
+    } else {
+        echo "0 results";
+    }
+}
+function displayPostPreviews0(mysqli $conn): void
+{
+    $sql = "SELECT * FROM post WHERE featured = 0";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            include 'most_recent_post_preview.php'; // Включаем файл, который отображает предварительный просмотр поста
+        }
+    } else {
+        echo "0 results";
+    }
+}
+
+$conn = createDBConnection();
 ?>
 
 
@@ -49,7 +87,7 @@ $posts = [
             <div class="rectangle-head">
                 <h1 class="title">Let's do it together.</h1>
                 <h2 class="under-title">We travel the world in search of stories. Come along for the ride.</h2>
-                <a href="@">
+                <a href='pashalka.php'>
                     <div class="mid-button-top">
                         <div class="mid-button-top__text">View Latest Posts</div>
                     </div>
@@ -77,27 +115,10 @@ $posts = [
                 </div>
                 <div class="underlining-featured-posts"></div>
                 <div class="block-featured-post__content">
-                        <!-- Блок с постами -->
-                    <?php 
-                // Подключение файла post_preview.php для каждого поста
-                    foreach ($posts as $post) {
-                        include 'post_preview.php';
-                    }
+                    <!-- Блок с постами -->
+                    <?php
+                    displayPostPreviews1($conn);
                     ?>
-                    <div class="article-from-top-down">
-                        <div class="article-from-top-down__rectangle-button-adventure">
-                            <div class="button-adventure">ADVENTURE</div>
-                        </div>
-                        <div class="article-from-top-down__title">From Top Down</div>
-                        <div class="article-from-top-down__under-title">Once a year, go someplace you’ve never been
-                            before.</div>
-                        <div class="article-from-top-down__footer-rectangle">
-                            <img src="../src/images/William-Wong.png" alt="face-William Wong"
-                                class="face-from-top-down">
-                            <div class="name-from-top-down">William Wong</div>
-                            <div class="date-from-top-down">September 25, 2015</div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="block-most-recent">
@@ -106,85 +127,10 @@ $posts = [
                 </div>
                 <div class="underlining-most-recent"></div>
                 <div class="block-most-recent__content">
-                    <div class="articles-in-most-recent">
-                        <div class="articles-in-most-recent__picture-Still-Standing-Tall"></div>
-                        <div class="articles-in-most-recent__title">Still Standing Tall</div>
-                        <div class="articles-in-most-recent__under-title-Still-Standing-Tall">Life begins at the end of
-                            your comfort
-                            zone.</div>
-                        <div class="underlining-articles-in-most-recent"></div>
-                        <div class="articles-in-most-recent__footer-rectangle">
-                            <img src="../src/images/William-Wong.png" alt="face William Wong"
-                                class="articles-in-most-recent__face">
-                            <div class="articles-in-most-recent__name">William Wong</div>
-                            <div class="articles-in-most-recent__date">9/25/2015</div>
-                        </div>
-                    </div>
-                    <div class="articles-in-most-recent">
-                        <div class="articles-in-most-recent__picture-Sunny-Side-Up"></div>
-                        <div class="articles-in-most-recent__title">Sunny Side Up</div>
-                        <div class="articles-in-most-recent__under-title-Sunny-Side-Up">No place is ever as bad as they
-                            tell you it’s going to be.</div>
-                        <div class="underlining-articles-in-most-recent"></div>
-                        <div class="articles-in-most-recent__footer-rectangle">
-                            <img src="../src/images/Mat-Vogels.png" alt="face William Wong"
-                                class="articles-in-most-recent__face">
-                            <div class="articles-in-most-recent__name">Mat Vogels</div>
-                            <div class="articles-in-most-recent__date">9/25/2015</div>
-                        </div>
-                    </div>
-                    <div class="articles-in-most-recent">
-                        <div class="articles-in-most-recent__picture-Water-Falls"></div>
-                        <div class="articles-in-most-recent__title">Water Falls</div>
-                        <div class="articles-in-most-recent__under-title-Water-Falls">We travel not to escape life, but
-                            for life not to escape us.</div>
-                        <div class="underlining-articles-in-most-recent"></div>
-                        <div class="articles-in-most-recent__footer-rectangle">
-                            <img src="../src/images/Mat-Vogels.png" alt="face William Wong"
-                                class="articles-in-most-recent__face">
-                            <div class="articles-in-most-recent__name">Mat Vogels</div>
-                            <div class="articles-in-most-recent__date">9/25/2015</div>
-                        </div>
-                    </div>
-                    <div class="articles-in-most-recent">
-                        <div class="articles-in-most-recent__picture-Through-the-Mist"></div>
-                        <div class="articles-in-most-recent__title">Through the Mist</div>
-                        <div class="articles-in-most-recent__under-title-Through-the-Mist">Travel makes you see what a
-                            tiny place you occupy in the world.</div>
-                        <div class="underlining-articles-in-most-recent"></div>
-                        <div class="articles-in-most-recent__footer-rectangle">
-                            <img src="../src/images/William-Wong.png" alt="face William Wong"
-                                class="articles-in-most-recent__face">
-                            <div class="articles-in-most-recent__name">William Wong</div>
-                            <div class="articles-in-most-recent__date">9/25/2015</div>
-                        </div>
-                    </div>
-                    <div class="articles-in-most-recent">
-                        <div class="articles-in-most-recent__picture-Awaken-Early"></div>
-                        <div class="articles-in-most-recent__title">Awaken Early</div>
-                        <div class="articles-in-most-recent__under-title-Awaken-Early">Not all those who wander are
-                            lost.</div>
-                        <div class="underlining-articles-in-most-recent"></div>
-                        <div class="articles-in-most-recent__footer-rectangle">
-                            <img src="../src/images/Mat-Vogels.png" alt="face William Wong"
-                                class="articles-in-most-recent__face">
-                            <div class="articles-in-most-recent__name">Mat Vogels</div>
-                            <div class="articles-in-most-recent__date">9/25/2015</div>
-                        </div>
-                    </div>
-                    <div class="articles-in-most-recent">
-                        <div class="articles-in-most-recent__picture-Try-it-Always"></div>
-                        <div class="articles-in-most-recent__title">Try it Always</div>
-                        <div class="articles-in-most-recent__under-title-Try-it-Always">The world is a book, and those
-                            who do not travel read only one page.</div>
-                        <div class="underlining-articles-in-most-recent"></div>
-                        <div class="articles-in-most-recent__footer-rectangle">
-                            <img src="../src/images/Mat-Vogels.png" alt="face William Wong"
-                                class="articles-in-most-recent__face">
-                            <div class="articles-in-most-recent__name">Mat Vogels</div>
-                            <div class="articles-in-most-recent__date">9/25/2015</div>
-                        </div>
-                    </div>
+                    <?php
+                    displayPostPreviews0($conn);
+                    closeDBConnection($conn);
+                    ?>
                 </div>
             </div>
         </div>

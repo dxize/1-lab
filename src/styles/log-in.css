@@ -1,0 +1,199 @@
+body {
+    height: 100%;
+    opacity: 1;
+    background: url(http://localhost/src/images/wheat-field.png) rgba(66, 70, 73, 0.4);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.content {
+    height: 800px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-bar {
+    width: 380px;
+    height: 87px;
+    margin-top: 333px;
+    margin-left: 230px;
+    opacity: 1;
+}
+
+.logo {
+    width: 232px;
+    height: 46px;
+    gap: 0px;
+    opacity: 1;
+    display: flex;
+}
+
+.logo__first-word {
+    height: 46px;
+    font-family: Lora;
+    font-size: 45.5px;
+    font-weight: 400;
+    line-height: 45.5px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.logo__second-word {
+    height: 31px;
+    margin-top: 15px;
+    font-family: Oxygen;
+    font-size: 24.5px;
+    font-weight: 400;
+    line-height: 30.94px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.under-the-logo {
+    width: 380px;
+    height: 25px;
+    margin-top: 16px;
+    font-family: Oxygen;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.log-in-bar {
+    width: 480px;
+    margin: auto 0;
+    padding: 56px 40px 164px 40px;
+    gap: 0px;
+    border-radius: 3px 0px 0px 0px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+
+}
+
+.log-in-bar__title {
+    width: 100px;
+    height: 40px;
+    margin-top: 56px;
+    margin-left: 40px;
+    font-family: Lora;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.log-in-bar__input-bars {
+    width: 400px;
+    height: 250px;
+    top: 146px;
+    left: 40px;
+    gap: 40px;
+    opacity: 1;
+}
+
+.email {
+    width: 400px;
+    height: 61px;
+    gap: 5px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    opacity: 1;
+}
+
+.email__label {
+    width: 400px;
+    height: 16px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    background: rgba(122, 122, 122, 1);
+}
+
+.email__input-field {
+    width: 400px;
+    height: 40px;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+}
+
+.password {
+    width: 400px;
+    height: 61px;
+    gap: 5px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    opacity: 1;
+}
+
+.password__label {
+    width: 400px;
+    height: 16px;
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    background: rgba(122, 122, 122, 1);
+}
+
+.password__input-field {
+    width: 400px;
+    height: 40px;
+    padding: 8px 4px 8px 372px;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    opacity: 1;
+    background: rgba(255, 255, 255, 1);
+}
+
+.password__input-field__icon {
+    width: 22px;
+    height: 16px;
+    top: 12px;
+    left: 373px;
+    border: 1px solid rgba(46, 46, 46, 1);
+    opacity: 1;
+}
+
+.eyeball {
+    width: 6px;
+    height: 6px;
+    top: 9px;
+    left: 9px;
+    border: 1px solid rgba(46, 46, 46, 1);
+    opacity: 1;
+}
+
+.log-in-bar__input-bars__button {
+    width: 93px;
+    height: 48px;
+    padding: 12px 24px;
+    border-radius: 3px 0px 0px 0px;
+    opacity: 1;
+    background: rgba(221, 120, 63, 1);
+}
+
+.log-in-bar__input-bars__button__content {
+    width: 45px;
+    height: 24px;
+    font-family: Oxygen;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
