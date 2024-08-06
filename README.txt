@@ -1,1 +1,1 @@
-[@dxize](https://t.me/dxize)
+[@dxize](t.me/dxize)
